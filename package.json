@@ -1,0 +1,44 @@
+{
+  "name": "digiwin-oap-docs-generate",
+  "version": "2.0.0",
+  "authors": "hata1234",
+  "license": "MIT",
+  "description": "ERP API 欄位文檔自動生成工具 ",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "explore": "tsx src/index.ts explore",
+    "generate": "tsx src/index.ts generate",
+    "generate-all": "./scripts/generate-all.sh",
+    "list-operations": "./scripts/list-operations.sh",
+    "analyze-merge-all": "./scripts/analyze-and-merge-all.sh",
+    "import-excel": "tsx src/index.ts import-excel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hata1234/digiwin-oap-docs-generate"
+  },
+  "keywords": [
+    "erp",
+    "documentation",
+    "sql-server",
+    "generator"
+  ],
+  "dependencies": {
+    "@types/node-xlsx": "^0.15.3",
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "mssql": "^10.0.2",
+    "ora": "^7.0.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/mssql": "^9.1.5",
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
